@@ -6,7 +6,7 @@ function searchRange(nums: number[], target: number): any {
 		return [-1, -1]
 	}
 	while (left <= right) {
-		const mid = left + ~~((right - left) / 2)
+		const mid = left + ~~((right - left) >> 1)
 		if (target > nums[mid]) {
 			left = mid + 1
 		} else if (target < nums[mid]) {
