@@ -11,7 +11,7 @@ function totalFruit(fruits: number[]): number {
       if (map.size === 2 && !map.has(fruits[j])) break;
       if (map.size < 2 && !map.has(fruits[j])) {
         pio = fruits[j];
-        map.set(fruits[j], j);
+        map.set(pio, j);
       }
       j++;
       nums++;
