@@ -35,7 +35,7 @@ function solveNQueens(n: number): string[][] {
         }
         return true
     }
-    const backtracking = (n:number,rowNum:number,board:string[][]): void => {
+    const backtracking = (n: number, rowNum: number, board: string[][]): void => {
         if (rowNum === n) {
             result.push(transformBoard(board))
             return
@@ -51,5 +51,6 @@ function solveNQueens(n: number): string[][] {
     backtracking(n,0,board)
     return result
 };
-console.log(solveNQueens(4));
+// console.log(solveNQueens(4));
 
+solveNQueens(4)
